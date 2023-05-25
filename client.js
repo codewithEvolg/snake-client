@@ -5,8 +5,7 @@ const connect = () => {
     connectionListener= { 
       host: '10.0.2.15',
       port: '50541'// PORT number here
-    }
-  );
+    });
   conn.on("connect", (data) => {
     // code that does something when the connection is first established
     console.log('Hello');
@@ -17,4 +16,4 @@ const connect = () => {
   return conn;
 };
 
-module.exports = connect;
+module.exports = {connect: connect};
