@@ -7,9 +7,12 @@ const connect = () => {
       port: '50541'// PORT number here
     });
   conn.on("connect", (data) => {
+    let delay = 0;
     // code that does something when the connection is first established
     console.log('Successfully connected to game server');
     console.log(`Name: ${'OEO'}`);
+    console.log('Move: up')
+
   });
   // interpret incoming data as text
   conn.setEncoding("utf8");
